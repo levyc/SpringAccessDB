@@ -2,14 +2,16 @@ package com.levy.Dao;
 
 import java.util.List;
 
-public interface UserDao {
-	public void addUser();
+import com.levy.entity.User;
 
-	public void delectUser();
+public interface UserDao {
+	public void addUser(User user);
+
+	public void delectUser(int id);
 
 	public User findById(int id);
 
 	public List findUser();
 
-	public void updateUser();
+	public void updateUser(int id,String  object[]);
 }
